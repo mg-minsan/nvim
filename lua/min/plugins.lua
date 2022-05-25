@@ -78,6 +78,9 @@ return packer.startup(function(use)
   }
   use 'nvim-telescope/telescope-media-files.nvim'
 
+  -- Null-ls
+  use 'jose-elias-alvarez/null-ls.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
