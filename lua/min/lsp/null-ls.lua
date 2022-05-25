@@ -14,7 +14,8 @@ null_ls.setup {
     formatting.prettier.with { extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } },
     formatting.stylua,
     formatting.gofmt,
-    formatting.goimprts,
+    formatting.goimports,
     formatting.golines,
+    diagnostics.golangci_lint,
   },
 }

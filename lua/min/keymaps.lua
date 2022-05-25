@@ -1,4 +1,3 @@
-
 local opts = { noremap = true, silent = true }
 local term_opts = { slient = true }
 local keymap = vim.api.nvim_set_keymap

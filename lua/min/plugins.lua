@@ -46,6 +46,7 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use 'folke/tokyonight.nvim' -- coloscheme
   use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
+  use 'numToStr/Comment.nvim'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -80,6 +81,9 @@ return packer.startup(function(use)
 
   -- Null-ls
   use 'jose-elias-alvarez/null-ls.nvim'
+
+  --
+  use 'folke/trouble.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
