@@ -45,8 +45,11 @@ return packer.startup(function(use)
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
   use 'folke/tokyonight.nvim' -- coloscheme
-  use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true }}
+  use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
   use 'numToStr/Comment.nvim'
+  -- use 'kyazdani42/nvim-tree.lua'
+  use 'preservim/nerdtree'
+  use 'tpope/vim-vinegar'
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -75,7 +78,7 @@ return packer.startup(function(use)
   -- Telescope
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
   use 'nvim-telescope/telescope-media-files.nvim'
 
@@ -91,4 +94,3 @@ return packer.startup(function(use)
     require("packer").sync()
   end
 end)
-

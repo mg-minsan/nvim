@@ -16,6 +16,8 @@ null_ls.setup {
     formatting.gofmt,
     formatting.goimports,
     formatting.golines,
+    formatting.rome,
     diagnostics.golangci_lint,
+    diagnostics.eslint_d
   },
 }
