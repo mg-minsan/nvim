@@ -23,7 +23,8 @@ vim.opt.updatetime = 300 -- faster completion (4000ms default)
 vim.opt.writebackup = false -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 vim.opt.expandtab = true -- convert tabs to spaces
 vim.opt.shiftwidth = 2 -- the number of spaces inserted for each indentation
-vim.opt.tabstop = 2 -- insert 2 spaces for a tab
+vim.opt.tabstop = 2 -- insert 4 spaces for a tab
+vim.opt.expandtab = false -- disable using spaces for tab
 vim.opt.cursorline = false -- highlight the current line
 vim.opt.number = true -- set numbered lines
 vim.opt.relativenumber = true -- set relative numbered lines
@@ -42,4 +43,4 @@ vim.opt.mouse = "a" --  break line on breaka
 vim.opt.errorbells = true
 vim.opt.visualbell = true -- disable the error sound
 
-vim.opt.shortmess:append "c"
+vim.opt.shortmess:append("c")
