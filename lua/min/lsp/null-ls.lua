@@ -32,7 +32,7 @@ null_ls.setup({
 		formatting.rubocop,
 		formatting.golines,
 		diagnostics.golangci_lint,
-		diagnostics.eslint_d,
+		diagnostics.eslint,
 	},
 	on_attach = function(client, bufnr)
 		if client.supports_method("textDocument/formatting") then
